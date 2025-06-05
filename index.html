@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Portofolio Website</title>
+    <title>Responsive Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
-
-    <link href ='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class = "header">
-        <a href = "#home" class = "logo"> Shaik
-            <span>Saklain</span></a>
 
-            <i class='bx bx-menu' id="menu-icon"></i>
-
+    <!-- Header -->
+    <header class="header">
+        <a href="#home" class="logo">Shaik <span>Saklain</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
@@ -23,214 +21,180 @@
             <a href="#testimonials">Testimonials</a>
             <a href="#contact">Contact</a>
         </nav>
-
-
     </header>
+
+    <!-- Home Section -->
     <section class="home" id="home">
-        <div class = "home-content">
-            <h1> Hi, It's <span>Saklain</span></h1>
-            <h3 class = "text-animation">I'm a <span></span></h3>
+        <div class="home-content">
+            <h1>Hi, It's <span>Saklain</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
             <p>
-Motivated Software Engineer with expertise in Java backend development, microservices architecture, and cloud deployment. Skilled in building scalable REST APIs, optimizing system performance, and designing robust solutions for complex problems. Passionate about delivering high-quality software and collaborating with innovative teams to drive technological advancements at a leading organization.            <div class="social-icons">
-                <a href="#"> <i class='bx bxl-linkedin' ></i></a>
+                Motivated Software Engineer with expertise in Java backend development, microservices architecture, and cloud deployment. Skilled in building scalable REST APIs, optimizing system performance, and designing robust solutions for complex problems. Passionate about delivering high-quality software and collaborating with innovative teams to drive technological advancements at a leading organization.
+            </p>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
                 <a href="#"><i class='bx bxl-github'></i></a>
                 <a href="#"><i class='bx bxl-instagram'></i></a>
                 <a href="#"><i class='bx bxl-twitter'></i></a>
-                
             </div>
 
             <div class="btn-group">
                 <a href="#" class="btn">Hire</a>
-                <a href="#contact"
-                class="btn">Contact</a>
+                <a href="#contact" class="btn">Contact</a>
             </div>
-
         </div>
-            <div class="home-img">
-                <img src="image.jpg" alt="">
-            </div>
-
-
+        <div class="home-img">
+            <img src="image.jpg" alt="Saklain's photo">
         </div>
-
-
     </section>
 
+    <!-- Education Section -->
     <section class="education" id="education">
         <h2 class="heading">Education</h2>
-
-    <div class="timeline-items">
-
-    <div class="timeline-item">
-        <div class="timeline-dots"></div>
-        <div class="timeline-date">2020</div>
-        <div class="timeline-content">
-            <h3>High School</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quas amet aliquam unde provident labore voluptate excepturi veritatis.</p>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dots"></div>
+                <div class="timeline-date">2020</div>
+                <div class="timeline-content">
+                    <h3>High School</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dots"></div>
+                <div class="timeline-date">2022</div>
+                <div class="timeline-content">
+                    <h3>University</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dots"></div>
+                <div class="timeline-date">2025</div>
+                <div class="timeline-content">
+                    <h3>Internship</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dots"></div>
+                <div class="timeline-date">2025</div>
+                <div class="timeline-content">
+                    <h3>Job 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="timeline-item">
-        <div class="timeline-dots"></div>
-        <div class="timeline-date">2022</div>
-        <div class="timeline-content">
-            <h3>University</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quas amet aliquam unde provident labore voluptate excepturi veritatis.</p>
-        </div>
-    </div>
-
-    <div class="timeline-item">
-        <div class="timeline-dots"></div>
-        <div class="timeline-date">2025</div>
-        <div class="timeline-content">
-            <h3>Internship</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quas amet aliquam unde provident labore voluptate excepturi veritatis.</p>
-        </div>
-    </div>
-
-    <div class="timeline-item">
-        <div class="timeline-dots"></div>
-        <div class="timeline-date">2025</div>
-        <div class="timeline-content">
-            <h3>Job 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quas amet aliquam unde provident labore voluptate excepturi veritatis.</p>
-        </div>
-    </div>
-
-</div>
+    <!-- Services Section -->
     <section class="services" id="services">
-    <h2 class="heading">Services</h2>
-
-    <div class="services-container">
-        <div class="services-box">
-            <div class="service-info">
-                <h4>UI Design</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam explicabo voluptates optio officiis assumenda nulla voluptate cumque earum molestias sint fugit quae, maiores aperiam quidem soluta eum minus consequatur! Reprehenderit.</p>
-            </div>
-        </div>
-        <div class="services-box">
-            <div class="service-info">
-                <h4>Frontend Development</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam explicabo voluptates optio officiis assumenda nulla voluptate cumque earum molestias sint fugit quae, maiores aperiam quidem soluta eum minus consequatur! Reprehenderit.</p>
-            </div>
-        </div>
-        <div class="services-box">
-            <div class="service-info">
-                <h4>Backend Development</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam explicabo voluptates optio officiis assumenda nulla voluptate cumque earum molestias sint fugit quae, maiores aperiam quidem soluta eum minus consequatur! Reprehenderit.</p>
-            </div>
-        </div>
-        <div class="services-box">
-            <div class="service-info">
-                <h4>Testing</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam explicabo voluptates optio officiis assumenda nulla voluptate cumque earum molestias sint fugit quae, maiores aperiam quidem soluta eum minus consequatur! Reprehenderit.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="testimonials" id = "testimonials">
-    <div class="wrapper">
-        <div class="testimonial-item">
-        <img src="1.jpg" alt="Marilyn">
-        <h2>Marilyn</h2>
-        <div class="rating">
-            <i class='bx bxs-star star'></i>
-            <i class='bx bxs-star star'></i>
-            <i class='bx bxs-star star'></i>
-            <i class='bx bxs-star star'></i>
-            <i class='bx bxs-star star'></i>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio corporis sequi optio magnam repudiandae molestias dolorum beatae, velit architecto, nam nesciunt similique. Rem atque hic asperiores dolores cum? Architecto, in.</p>
-    </div>
-
-        <div class="testimonial-item">
-            <img src="2.jpg" alt="">
-            <h2>Julia</h2>
-                <div class="rating">
-            <i class='bx bxs-star star'></i>
-            <i class='bx bxs-star star'></i>
-            <i class='bx bxs-star star'></i>
-            <i class='bx bxs-star star'></i>
-            <i class='bx bxs-star star'></i>
-
+        <h2 class="heading">Services</h2>
+        <div class="services-container">
+            <div class="services-box">
+                <div class="service-info">
+                    <h4>UI Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio corporis sequi optio magnam repudiandae molestias dolorum beatae, velit architecto, nam nesciunt similique. Rem atque hic asperiores dolores cum? Architecto, in.</p>
-        </div>
-        <div class="testimonial-item">
-            <img src="3.jpg" alt="">
-            <h2>Rebecca</h2>
-                <div class="rating">
-                    <i class='bx bxs-star star'></i>
-                    <i class='bx bxs-star star'></i>
-                    <i class='bx bxs-star star'></i>
-                    <i class='bx bxs-star star'></i>
-                    <i class='bx bxs-star star'></i>
+            </div>
+            <div class="services-box">
+                <div class="service-info">
+                    <h4>Frontend Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio corporis sequi optio magnam repudiandae molestias dolorum beatae, velit architecto, nam nesciunt similique. Rem atque hic asperiores dolores cum? Architecto, in.</p>
-        </div>
-    </div>
-</section>
-
-<section class="contact" id = "contact">
-    <h2 class="heading">Contact <span>Me</span></h2>
-    <form action="">
-        <div class="input-group">
-            <div class="input-box">
-
-                <input type="text"placeholder="Full Name">
-                <input type="email"placeholder="Email">
-                
             </div>
-            <div class="input-box">
-                <input type = "number"
-                placeholder="Phone Number">
-                <input type = "text"
-                placeholder="Subject">
+            <div class="services-box">
+                <div class="service-info">
+                    <h4>Backend Development</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
             </div>
-            <div class="input-group-2">
-                <textarea name="" id=""cols="30" rows="10" placeholder="Your Message">
-                </textarea>
-                <input type="subject" value="Send Message" class="btn">
+            <div class="services-box">
+                <div class="service-info">
+                    <h4>Testing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
             </div>
         </div>
-    </form>
-</section>
+    </section>
 
-<footer class = "footer">
-    <div class="social">
-        <a href="#"> <i class='bx bxl-linkedin' ></i></a>
-        <a href="#"><i class='bx bxl-github'></i></a>
-        <a href="#"><i class='bx bxl-instagram'></i></a>
-        <a href="#"><i class='bx bxl-twitter'></i></a>
-    </div>
-    <ul class="list">
-        <li>
-            <a href="#">FAQ</a>
-        </li>
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="wrapper">
+            <div class="testimonial-item">
+                <img src="1.jpg" alt="Marilyn">
+                <h2>Marilyn</h2>
+                <div class="rating">
+                    <i class='bx bxs-star star'></i><i class='bx bxs-star star'></i><i class='bx bxs-star star'></i><i class='bx bxs-star star'></i><i class='bx bxs-star star'></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
 
-        <li>
-            <a href="#">Services</a>
-        </li>
+            <div class="testimonial-item">
+                <img src="2.jpg" alt="Julia">
+                <h2>Julia</h2>
+                <div class="rating">
+                    <i class='bx bxs-star star'></i><i class='bx bxs-star star'></i><i class='bx bxs-star star'></i><i class='bx bxs-star star'></i><i class='bx bxs-star star'></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
 
-        <li>
-            <a href="#">About Me</a>
-        </li>
+            <div class="testimonial-item">
+                <img src="3.jpg" alt="Rebecca">
+                <h2>Rebecca</h2>
+                <div class="rating">
+                    <i class='bx bxs-star star'></i><i class='bx bxs-star star'></i><i class='bx bxs-star star'></i><i class='bx bxs-star star'></i><i class='bx bxs-star star'></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
 
-        <li>
-            <a href="#">Contact</a>
-        </li>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="#">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number" required>
+                    <input type="text" placeholder="Subject" required>
+                </div>
+                <div class="input-group-2">
+                    <textarea cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </div>
+            </div>
+        </form>
+    </section>
 
-        <li>
-            <a href="#">Testimonials</a>
-        </li>
-    </ul>
-    <p class="copyright">
-        © Saklain Shaik Vempalli | All Rights Reserved
-    </p>
-</footer>
-    <script> src ="script.js" </script>
-    
-</body> 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Testimonials</a></li>
+        </ul>
+        <p class="copyright">
+            © Saklain Shaik Vempalli | All Rights Reserved
+        </p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+   
+
+
+</body>
 </html>
-
