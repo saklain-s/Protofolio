@@ -125,11 +125,11 @@ span{
 .home-img img{
     position: relative;
     top: 3rem;
-    width: 32vw;
+    width: 22vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
-    transition: 0.4 ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
 .home-img img:hover{
@@ -235,47 +235,13 @@ span{
     position: relative;
 }
 
-.text-animation span::before{
-    content: "Web Developer";
-    color: var(--main-color);
-    animation: words 20s infinite;
+.text-animation span::before,
+.text-animation span::after {
+    content: none !important;
+    animation: none !important;
+    display: none !important;
 }
 
-.text-animation span::after{
-
-    content: "";
-    background-color: var(--bg-color);
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid var(--bg-color);
-    right: -8px;
-    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
-
-}
-@keyframes cursor {
-    to{
-        border-left: 2px solid var(--main-color);
-    }
-    
-}
-@keyframes words {
-  0%, 20% {
-    content: "Frontend Designer";
-  }
-  21%, 40% {
-    content: "Web Designer";
-  }
-  41%, 60% {
-    content: "UI / UX Designer";
-  }
-  61%, 80% {
-    content: "Web Developer";
-  }
-  81%, 100% {
-    content: "Software Tester";
-  }
-}
 /* Keyframes for typing effect (optional use) */
 @keyframes typing {
     0% {
@@ -758,7 +724,7 @@ span{
     }
 
     .home-img img {
-        width: 56vw;
+        width: 36vw;
     }
 
     .services h2 {
@@ -771,5 +737,146 @@ span{
     #menu-icon.bx-x {
         /* For example, rotate or change icon */
         transform: rotate(90deg);
+    }
+}
+
+.projects {
+    background: var(--second-bg-color);
+    padding: 5rem 2rem;
+}
+
+.projects .heading {
+    margin-bottom: 5rem;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+    justify-items: center;
+}
+
+.project-item {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 2rem;
+    padding: 30px 20px 20px 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 0 25px var(--main-color);
+    max-width: 350px;
+}
+
+.project-item:hover {
+    border: 3px solid var(--main-color);
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 50px var(--main-color);
+}
+
+.project-item img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 1rem;
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 15px var(--main-color);
+    margin-bottom: 1.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+.project-item h3 {
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+    font-weight: 600;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-desc {
+    font-size: 1.3rem;
+    color: #b0f7f7;
+    margin-top: 0.7rem;
+    margin-bottom: 0.5rem;
+    padding: 0 0.5rem;
+    min-height: 2.2em;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 45%;
+    }
+    .header {
+        padding: 2rem 2%;
+    }
+    .home {
+        flex-direction: column-reverse;
+        gap: 3rem;
+        margin: 2rem 1rem;
+    }
+    .home-content h1 {
+        font-size: 4rem;
+    }
+    .home-content h3 {
+        font-size: 2rem;
+    }
+    .home-img img {
+        width: 60vw;
+        top: 1rem;
+    }
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .project-item {
+        max-width: 95vw;
+        padding: 20px 5px 15px 5px;
+    }
+    .project-item img {
+        max-width: 90vw;
+    }
+    .services-container {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+    .services-box {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+    .timeline-items {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    .timeline-content {
+        padding: 20px 10px;
+    }
+    .contact form {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    .footer {
+        padding: 1rem 1%;
+    }
+    .heading {
+        font-size: 4rem;
     }
 }

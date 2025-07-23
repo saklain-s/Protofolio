@@ -6,6 +6,7 @@
     <title>Responsive Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2300ffee'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.35em' font-family='Poppins, Arial, sans-serif' font-size='28' fill='black'%3EVSS%3C/text%3E%3C/svg%3E"/>
 </head>
 <body>
 
@@ -16,9 +17,9 @@
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
-            <a href="#education">Education</a>
             <a href="#services">Services</a>
-            <a href="#testimonials">Testimonials</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -27,10 +28,11 @@
     <section class="home" id="home">
         <div class="home-content">
             <h1>Hi, It's <span>Saklain</span></h1>
-            <h3 class="text-animation">I'm a <span></span></h3>
+                <h3 class="text-animation"><span></span></h3>
             <p>
-                Motivated Software Engineer with expertise in Java backend development, microservices architecture, and cloud deployment. Skilled in building scalable REST APIs, optimizing system performance, and designing robust solutions for complex problems. Passionate about delivering high-quality software and collaborating with innovative teams to drive technological advancements at a leading organization.
-            </p>
+                Software Engineer with a solid foundation in backend development, specializing in Java, Spring Boot, and microservices. Experienced in designing scalable APIs and deploying real‑world applications with clean architecture and optimal performance.
+
+                Also familiar with machine learning, applying core concepts using Python and its libraries to build practical solutions. Actively expanding skills to integrate intelligent features into modern software systems.            </p>
                 <div class="social-icons">
                 <a href="https://www.linkedin.com/in/vempalli-shaik-saklain-030031254/" target="_blank">
                     <i class='bx bxl-linkedin'></i>
@@ -63,6 +65,66 @@
         </div>
     </section>
 
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+        <div class="services-container">
+            <div class="services-box">
+                <div class="service-info">
+                    <h4>Backend Development</h4>
+                    <p>Experienced in building robust and scalable RESTful APIs using Java and Spring Boot, with a strong focus on clean architecture and real-world deployment practices.</p>
+                </div>
+            </div>
+            <div class="services-box">
+                <div class="service-info">
+                    <h4>Microservices</h4>
+                    <p>Skilled in designing microservice-based architectures using Spring Cloud, implementing service discovery, load balancing, and inter-service communication for scalable applications.</p>
+                </div>
+            </div>
+            <div class="services-box">
+                <div class="service-info">
+                    <h4>Frontend Development</h4>
+                    <p>Capable of creating responsive and interactive web UIs using React and HTML/CSS. Experienced in integrating frontend with backend APIs in full-stack projects.</p>
+                </div>
+            </div>
+            <div class="services-box">
+                <div class="service-info">
+                    <h4>Testing</h4>
+                    <p>Proficient in writing unit and integration tests using JUnit and Mockito to ensure code reliability, and applying test-driven development (TDD) practices in backend projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Testimonials -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="projects-container">
+            <div class="project-item">
+                <a href="https://github.com/example/project1" target="_blank">
+                    <img src="1.jpg" alt="Project 1">
+                    <h3>Project One</h3>
+                </a>
+                <p class="project-desc">This is a short description for Project One.</p>
+            </div>
+            <div class="project-item">
+                <a href="https://github.com/example/project2" target="_blank">
+                    <img src="2.jpg" alt="Project 2">
+                    <h3>Project Two</h3>
+                </a>
+                <p class="project-desc">This is a short description for Project Two.</p>
+            </div>
+            <div class="project-item">
+                <a href="https://github.com/example/project3" target="_blank">
+                    <img src="3.jpg" alt="Project 3">
+                    <h3>Project Three</h3>
+                </a>
+                <p class="project-desc">This is a short description for Project Three.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Education Section -->
     <section class="education" id="education">
         <h2 class="heading">Education</h2>
@@ -84,106 +146,24 @@
                     <p>8.3 CGPA</p>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-dots"></div>
-                <div class="timeline-date">2025</div>
-                <div class="timeline-content">
-                    <h3>Internship</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <!--
-            <div class="timeline-item">
-                <div class="timeline-dots"></div>
-                <div class="timeline-date">2025</div>
-                <div class="timeline-content">
-                    <h3>Job 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            -->
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <h2 class="heading">Services</h2>
-        <div class="services-container">
-            <div class="services-box">
-                <div class="service-info">
-                    <h4>Backend Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div class="services-box">
-                <div class="service-info">
-                    <h4>Micro Services</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div class="services-box">
-                <div class="service-info">
-                    <h4>Frontend Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            
-            <div class="services-box">
-                <div class="service-info">
-                    <h4>Testing</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials" id="testimonials">
-        <div class="wrapper">
-            <div class="testimonial-item">
-                <img src="1.jpg" alt="Marilyn">
-                <h2>Marilyn</h2>
-                <div class="rating">
-                    <i class='bx bxs-star star'></i><i class='bx bxs-star star'></i><i class='bx bxs-star star'></i><i class='bx bxs-star star'></i><i class='bx bxs-star star'></i>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-
-            <div class="testimonial-item">
-                <img src="2.jpg" alt="Julia">
-                <h2>Julia</h2>
-                <div class="rating">
-                    <i class='bx bxs-star star'></i><i class='bx bxs-star star'></i><i class='bx bxs-star star'></i><i class='bx bxs-star star'></i><i class='bx bxs-star star'></i>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-
-            <div class="testimonial-item">
-                <img src="3.jpg" alt="Rebecca">
-                <h2>Rebecca</h2>
-                <div class="rating">
-                    <i class='bx bxs-star star'></i><i class='bx bxs-star star'></i><i class='bx bxs-star star'></i><i class='bx bxs-star star'></i><i class='bx bxs-star star'></i>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="#">
+        <form action="https://formspree.io/f/xeozazya" method="POST">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" placeholder="Email" required>
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Phone Number" required>
-                    <input type="text" placeholder="Subject" required>
+                    <input type="number" name="phone" placeholder="Phone Number" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
                 </div>
                 <div class="input-group-2">
-                    <textarea cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
                     <input type="submit" value="Send Message" class="btn">
                 </div>
             </div>
@@ -204,7 +184,6 @@
             <li><a href="#">Services</a></li>
             <li><a href="#">About Me</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Testimonials</a></li>
         </ul>
         <p class="copyright">
             © Saklain Shaik Vempalli | All Rights Reserved
