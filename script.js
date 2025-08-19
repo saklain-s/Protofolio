@@ -30,8 +30,7 @@ const words = [
     "Microservices Architecture",
     "RESTful API Development",
     "Cloud-Based Deployment",
-    "Software Testing",
-    "Machine Learning"
+    "Software Development",
 ];
 
 let wordIndex = 0;
