@@ -3,68 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saklain Portfolio Website</title>
+    <title>Shaik Saklain - Software Engineer & Backend Developer</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2300ffee'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.35em' font-family='Poppins, Arial, sans-serif' font-size='28' fill='black'%3EVSS%3C/text%3E%3C/svg%3E"/>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2300ffee'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.35em' font-family='Poppins, Arial, sans-serif' font-size='28' fill='black'%3ESS%3C/text%3E%3C/svg%3E"/>
 </head>
 <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar"></div>
 
     <!-- Header -->
     <header class="header">
-        <a href="#home" class="logo">Shaik <span>Saklain</span></a>
+        <a href="#home" class="logo"><i class='bx bxs-code'></i> Shaik<span>Saklain</span></a>
         <i class='bx bx-menu' id="menu-icon"></i>
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <!-- Home Section -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hi, It's <span>Saklain</span></h1>
-                <h3 class="text-animation"><span></span></h3>
-            <p>
-                Software Engineer proficient in crafting robust backend systems using Java, Spring Boot, and microservices
-architectures. Adept at building and deploying scalable RESTful APIs for high-performance applications.
-Skilled in Python for implementing foundational machine learning solutions, enhancing software intelligence.
-Passionate about leveraging advanced Java concurrency, cloud technologies (AWS, Docker, Kubernetes), and
-CI/CD pipelines to deliver production-grade solutions, with a commitment to continuous skill growth in modern
-software engineering.       </p>
-                <div class="social-icons">
-                <a href="https://www.linkedin.com/in/vempalli-shaik-saklain-030031254/" target="_blank">
-                    <i class='bx bxl-linkedin'></i>
-                </a>
-                <a href="https://github.com/saklain-s" target="_blank">
-                    <i class='bx bxl-github'></i>
-                </a>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="availability-badge">🟢 Available for opportunities</div>
+                <h1>Hi, I'm <span>Saklain</span></h1>
+                <h2 class="text-animation"><span></span></h2>
+                <p>
+                    Software Engineer with expertise in backend systems, microservices architecture, and SQL databases. 
+                    Passionate about building scalable, high-performance solutions using Java, Spring Boot, and modern cloud practices.
+                </p>
                 
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vempalli-shaik-saklain-030031254/" target="_blank" title="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/saklain-s" target="_blank" title="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://leetcode.com/u/Saklain_4/" target="_blank" title="LeetCode">
+                        <i class='bx bxl-leetcode'></i>
+                    </a>
+                    <a href="https://www.instagram.com/_.saklain/" target="_blank" title="Instagram">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </div>
 
-
-                <a href="https://leetcode.com/u/Saklain_4/" target="_blank">
-                    <img src="https://leetcode.com/favicon.ico" alt="LeetCode">
-                </a>
-
-                <a href="https://www.instagram.com/_.saklain/" target="_blank">
-                    <i class='bx bxl-instagram'></i>
-                </a>
-              
-
+                <div class="cta-buttons">
+                    <a href="resume.pdf" class="btn btn-primary" target="_blank">
+                        <i class='bx bxs-file-pdf'></i> Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class='bx bxs-envelope'></i> Get In Touch
+                    </a>
+                </div>
             </div>
 
-
-            <div class="btn-group">
-                <a href="resume.pdf" class="btn" target="_blank">Resume</a>
-                <a href="#contact" class="btn">Contact</a>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="image.jpg" alt="Shaik Saklain">
+                </div>
             </div>
         </div>
-        <div class="home-img">
-            <img src="image.jpg" alt="Saklain's photo">
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-header">
+            <h2>About Me</h2>
+            <p>Get to know me better</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Who I Am</h3>
+                <p>
+                    I'm a passionate Software Engineer with a strong focus on backend development and system architecture. 
+                    With expertise in Java, Spring Boot, SQL databases, and cloud technologies, I design and deploy scalable solutions that 
+                    handle real-world challenges.
+                </p>
+                <p>
+                    My journey in software engineering has equipped me with skills in microservices design, RESTful API development, 
+                    and cloud practices. I'm committed to writing clean, maintainable code and following industry best practices.
+                </p>
+                <p>
+                    Beyond coding, I enjoy solving algorithmic problems on LeetCode and continuously learning new technologies 
+                    to stay ahead in this dynamic field.
+                </p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <h3>5+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Java</h3>
+                    <p>Core Language</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Spring Boot</h3>
+                    <p>Framework Expert</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="section-header">
+            <h2>My Skills</h2>
+            <p>Technologies & Expertise</p>
+        </div>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3><i class='bx bxs-code'></i> Backend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Java</div>
+                    <div class="skill-tag">Spring Boot</div>
+                    <div class="skill-tag">RESTful APIs</div>
+                    <div class="skill-tag">Microservices</div>
+                    <div class="skill-tag">JDBC</div>
+                    <div class="skill-tag">SQL</div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3><i class='bx bxs-cloud'></i> Cloud & DevOps</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">AWS (IAM, EC2, S3)</div>
+                    <div class="skill-tag">Docker</div>
+                    <div class="skill-tag">Jenkins</div>
+                    <div class="skill-tag">Linux</div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3><i class='bx bxs-database'></i> Databases</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">MySQL</div>
+                    <div class="skill-tag">PostgreSQL</div>
+                    <div class="skill-tag">MongoDB</div>
+                    <div class="skill-tag">Oracle</div>
+                    <div class="skill-tag">JPA/Hibernate</div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3><i class='bx bxs-shapes'></i> Frontend & Others</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">React</div>
+                    <div class="skill-tag">HTML5</div>
+                    <div class="skill-tag">CSS3</div>
+                    <div class="skill-tag">JavaScript</div>
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">Flask</div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3><i class='bx bxs-wrench'></i> Tools & Concepts</h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">Git</div>
+                    <div class="skill-tag">Maven</div>
+                    <div class="skill-tag">JUnit</div>
+                    <div class="skill-tag">Mockito</div>
+                    <div class="skill-tag">Postman</div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -102,9 +207,12 @@ software engineering.       </p>
     -->
     
 
-    <!-- Testimonials -->
+    <!-- Projects Section -->
     <section class="projects" id="projects">
-        <h2 class="heading">Projects</h2>
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+            <p>Showcasing my best work</p>
+        </div>
         <div class="projects-container">
             <div class="project-item">
                 <a href="https://github.com/saklain-s/ecommerce" target="_blank">
@@ -118,7 +226,7 @@ software engineering.       </p>
                     <img src="blognest.png" alt="Project 2">
                     <h3>Blognest</h3>
                 </a>
-                <p class="project-desc">A modern, scalable blog platform built with Spring Boot microservices architecture and React frontend, featuring JWT authentication and comprehensive CI/CD pipeline.</p>
+                <p class="project-desc">A modern, scalable blog platform built with Spring Boot, React frontend, SQL database, and JWT authentication.</p>
             </div>
             <div class="project-item">
                 <a href="https://github.com/saklain-s/springfoundationalprojects" target="_blank">
@@ -130,9 +238,12 @@ software engineering.       </p>
         </div>
     </section>
 
-    <!-- Certifications Section (4 per row, smaller cards) -->
+    <!-- Certifications Section -->
     <section class="certifications" id="certifications">
-        <h2 class="heading">Certifications</h2>
+        <div class="section-header">
+            <h2>Certifications</h2>
+            <p>Verified credentials & achievements</p>
+        </div>
         <div class="certifications-container">
                         <div class="certification-item">
                                 <a href="https://courses.edx.org/certificates/81f444a32ab949709047143133750c4b?_gl=1*47s1jl*_gcl_au*MTgyNDQ4ODkyNC4xNzU0OTczNTcy*_ga*MTgxMjc2Njc5Ny4xNzU0OTczNTUz*_ga_D3KS4KMDT0*czE3NTU4NTQyMDgkbzkkZzAkdDE3NTU4NTQyMDgkajYwJGwwJGgw" target="_blank">
@@ -162,47 +273,127 @@ software engineering.       </p>
     </section>
     <!-- Education Section -->
     <section class="education" id="education">
-        <h2 class="heading">Education</h2>
+        <div class="section-header">
+            <h2>Education & Certifications</h2>
+            <p>My learning journey</p>
+        </div>
         <div class="timeline-items">
             <div class="timeline-item">
                 <div class="timeline-dots"></div>
                 <div class="timeline-date">2022</div>
                 <div class="timeline-content">
-                    <h3>Intermediate 
-                    </h3>
-                    <p>63% in IPE</p>
+                    <h3>Intermediate (IPE)</h3>
+                    <p>Achieved 63% • Strong foundation in science and mathematics</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-dots"></div>
                 <div class="timeline-date">2022-26</div>
                 <div class="timeline-content">
-                    <h3>University</h3>
-                    <p>8.3 CGPA</p>
+                    <h3>B.Tech in Computer Science</h3>
+                    <p>CGPA: 8.3 • Specialized in software development and system design</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="section-header">
+            <h2>Professional Experience</h2>
+            <p>My career highlights</p>
+        </div>
+        <div class="experience-container">
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3>Backend Developer</h3>
+                    <span class="experience-period">2023 - Present</span>
+                </div>
+                <p class="experience-company">Freelance / Open Source</p>
+                <ul class="experience-highlights">
+                    <li>Developed scalable microservices using Spring Boot architecture</li>
+                    <li>Implemented RESTful APIs with SQL databases, JUnit and Mockito testing</li>
+                    <li>Deployed applications on AWS with Docker containerization</li>
+                    <li>Optimized database performance and query execution</li>
+                </ul>
+            </div>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3>Full Stack Developer</h3>
+                    <span class="experience-period">Academic Projects</span>
+                </div>
+                <p class="experience-company">University & Personal Projects</p>
+                <ul class="experience-highlights">
+                    <li>Built full-stack applications with React, Python Flask, Spring Boot and SQL databases</li>
+                    <li>Designed and implemented complex database schemas using MySQL with JPA/Hibernate ORM</li>
+                    <li>Integrated JWT authentication and implemented security best practices</li>
+                    <li>Contributed to open-source Spring framework projects</li>
+                </ul>
+            </div>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3>Competitive Programmer</h3>
+                    <span class="experience-period">2021 - Present</span>
+                </div>
+                <p class="experience-company">LeetCode / HackerRank</p>
+                <ul class="experience-highlights">
+                    <li>Solved 500+ LeetCode problems across various difficulty levels</li>
+                    <li>Strong grasp of data structures, algorithms, and problem-solving patterns</li>
+                    <li>Ranked in top percentile for coding challenges</li>
+                    <li>Consistently practice modern programming techniques</li>
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="https://formspree.io/f/xeozazya" method="POST">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" name="name" placeholder="Full Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>Let's connect and create something amazing</p>
+        </div>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class='bx bxs-envelope'></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>shaiksaklain04@gmail.com</p>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <input type="number" name="phone" placeholder="Phone Number" required>
-                    <input type="text" name="subject" placeholder="Subject" required>
+                <div class="contact-item">
+                    <i class='bx bxs-phone'></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91 834 139 1869</p>
+                    </div>
                 </div>
-                <div class="input-group-2">
-                    <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                    <input type="submit" value="Send Message" class="btn">
+                <div class="contact-item">
+                    <i class='bx bxs-map'></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Anantapur, Andhra Pradesh</p>
+                    </div>
                 </div>
             </div>
-        </form>
+            <form action="https://formspree.io/f/xeozazya" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" cols="30" rows="8" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class='bx bxs-send'></i> Send Message
+                </button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
