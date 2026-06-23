@@ -2,7 +2,88 @@
 // PROFESSIONAL PORTFOLIO JAVASCRIPT
 // ========================================
 
+// ========================================
+// VIEW COUNTER - USING COUNTAPI.XYZ
+// ========================================
+
+function initializeViewCounter() {
+    const viewCountElement = document.getElementById('viewCount');
+    if (!viewCountElement) return;
+    
+    // Using CountAPI - hits the API and increments counter
+    const counterUrl = 'https://api.countapi.xyz/hit/saklain-portfolio-views/views';
+    
+    fetch(counterUrl)
+        .then(response => response.json())
+        .then(data => {
+            if (data.value) {
+                const formattedCount = parseInt(data.value).toLocaleString();
+                viewCountElement.textContent = formattedCount;
+                console.log('Genuine portfolio views:', formattedCount);
+            }
+        })
+        .catch(error => {
+            console.warn('View counter error:', error);
+            // Fallback to localStorage
+            let viewCount = localStorage.getItem('portfolioViews') || 0;
+            viewCount = parseInt(viewCount) + 1;
+            localStorage.setItem('portfolioViews', viewCount);
+            viewCountElement.textContent = parseInt(viewCount).toLocaleString();
+        });
+}
+
+// Initialize view counter when page loads
+window.addEventListener('load', initializeViewCounter);
+
+// ========================================
+// LOADING SCREEN ANIMATION
+// ========================================
+
+function initLoadingScreen() {
+    const loadingScreen = document.getElementById('loadingScreen');
+    const loadingPercent = document.getElementById('loadingPercent');
+    let percent = 0;
+    let speed = Math.random() * 30 + 20; // Random speed between 20-50ms
+
+    const loadingInterval = setInterval(() => {
+        percent += Math.random() * 35;
+        
+        if (percent > 100) {
+            percent = 100;
+        }
+
+        loadingPercent.textContent = Math.floor(percent);
+
+        if (percent >= 100) {
+            clearInterval(loadingInterval);
+            
+            // Wait a bit before hiding the loading screen
+            setTimeout(() => {
+                loadingScreen.classList.add('hidden');
+            }, 500);
+        }
+    }, speed);
+
+    // Also hide loading screen when page fully loads
+    window.addEventListener('load', () => {
+        percent = 100;
+        loadingPercent.textContent = '100';
+        setTimeout(() => {
+            loadingScreen.classList.add('hidden');
+        }, 500);
+    });
+}
+
+// Start loading animation when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLoadingScreen);
+} else {
+    initLoadingScreen();
+}
+
+// ========================================
 // DOM Elements
+// ========================================
 const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('.navbar');
 const navLinks = document.querySelectorAll('header nav a');

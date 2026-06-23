@@ -9,6 +9,19 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2300ffee'/%3E%3Ctext x='50%' y='50%' text-anchor='middle' dy='.35em' font-family='Poppins, Arial, sans-serif' font-size='28' fill='black'%3ESS%3C/text%3E%3C/svg%3E"/>
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-container">
+            <div class="loading-circle">
+                <div class="loading-circle-inner"></div>
+            </div>
+            <div class="loading-text">
+                <h2>Welcome</h2>
+                <p class="loading-percentage"><span id="loadingPercent">0</span>%</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress-bar"></div>
 
@@ -47,7 +60,7 @@
                         <i class='bx bxl-github'></i>
                     </a>
                     <a href="https://leetcode.com/u/Saklain_4/" target="_blank" title="LeetCode">
-                        <i class='bx bxl-leetcode'></i>
+                        <img src="https://leetcode.com/favicon.ico" alt="LeetCode" style="width: 2.5rem; height: 2.5rem;">
                     </a>
                     <a href="https://www.instagram.com/_.saklain/" target="_blank" title="Instagram">
                         <i class='bx bxl-instagram'></i>
@@ -55,8 +68,8 @@
                 </div>
 
                 <div class="cta-buttons">
-                    <a href="resume.pdf" class="btn btn-primary" target="_blank">
-                        <i class='bx bxs-file-pdf'></i> Download Resume
+                    <a href="#projects" class="btn btn-primary">
+                        <i class='bx bxs-file-pdf'></i> View My Work
                     </a>
                     <a href="#contact" class="btn btn-secondary">
                         <i class='bx bxs-envelope'></i> Get In Touch
@@ -216,21 +229,21 @@
         <div class="projects-container">
             <div class="project-item">
                 <a href="https://github.com/saklain-s/ecommerce" target="_blank">
-                    <img src="1.jpg" alt="Project 1">
+                    <img src="1.jpg" alt="Ecommerce project - A fully functional e-commerce application with microservices architecture">
                     <h3>Ecommerce</h3>
                 </a>
                 <p class="project-desc">A fully functional e-commerce web application built using Spring, Microservices, Docker, React, and AWS (IAM)</p>
             </div>
             <div class="project-item">
-                <a href="https://github.com/example/project2" target="_blank">
-                    <img src="blognest.png" alt="Project 2">
+                <a href="https://github.com/saklain-s/blognest" target="_blank">
+                    <img src="blognest.png" alt="Blognest project - A modern blog platform with Spring Boot and React">
                     <h3>Blognest</h3>
                 </a>
                 <p class="project-desc">A modern, scalable blog platform built with Spring Boot, React frontend, SQL database, and JWT authentication.</p>
             </div>
             <div class="project-item">
                 <a href="https://github.com/saklain-s/springfoundationalprojects" target="_blank">
-                    <img src="3.png" alt="Project 3">
+                    <img src="3.png" alt="Spring Foundational Projects - Comprehensive Spring ecosystem modules and hands-on projects">
                     <h3>Spring Foundational Projects</h3>
                 </a>
                 <p class="project-desc">This repository contains 10 comprehensive modules covering the entire Spring ecosystem, designed as a progressive learning journey. Each module builds upon previous concepts and includes multiple hands-on projects with practical examples.</p>
@@ -247,25 +260,25 @@
         <div class="certifications-container">
                         <div class="certification-item">
                                 <a href="https://courses.edx.org/certificates/81f444a32ab949709047143133750c4b?_gl=1*47s1jl*_gcl_au*MTgyNDQ4ODkyNC4xNzU0OTczNTcy*_ga*MTgxMjc2Njc5Ny4xNzU0OTczNTUz*_ga_D3KS4KMDT0*czE3NTU4NTQyMDgkbzkkZzAkdDE3NTU4NTQyMDgkajYwJGwwJGgw" target="_blank">
-                                    <div class="cert-img-wrapper"><img src="java.png" alt="Java Fundamentals certificate badge featuring the Java logo on a clean white background. The text Java Fundamentals appears prominently, conveying a sense of achievement and professionalism." /></div>
+                                    <div class="cert-img-wrapper"><img src="java.png" alt="Java Fundamentals certificate - edX certified Java programming fundamentals" /></div>
                                     <h3>Java Fundamentals</h3>
                                 </a>
                         </div>
                         <div class="certification-item">
                                 <a href="https://courses.edx.org/certificates/53f0bbb19e2f404d968d3e07e30fd6fc?_gl=1*1gt4i5z*_gcl_au*ODIzMjMwODM5LjE3NTYxNDA4NzE.*_ga*MTA5NjE1MTEyMS4xNzU2MTQwODM2*_ga_D3KS4KMDT0*czE3NTYzMTU4NTQkbzMkZzEkdDE3NTYzMTU4NzYkajM4JGwwJGgw" target="_blank">
-                                    <div class="cert-img-wrapper"><img src="docker.png" alt="Docker logo with a blue whale carrying containers, representing containerization technology, set against a clean white background. The image conveys a modern and professional tone. Text in the image reads Docker." /></div>
+                                    <div class="cert-img-wrapper"><img src="docker.png" alt="Docker certification - edX certified containerization with Docker and Java microservices" /></div>
                                     <h3>Containerize Java Microservices with Docker</h3>
                                 </a>
                         </div>
                         <div class="certification-item">
                                 <a href="https://courses.edx.org/certificates/883b95f5fce64c8695ae665f5f3f933a?_gl=1*vu6jh3*_gcl_au*ODIzMjMwODM5LjE3NTYxNDA4NzE.*_ga*MTA5NjE1MTEyMS4xNzU2MTQwODM2*_ga_D3KS4KMDT0*czE3NTYzMTU4NTQkbzMkZzEkdDE3NTYzMTYxMDUkajU5JGwwJGgw" target="_blank">
-                                    <div class="cert-img-wrapper"><img src="cs50.png" alt="CS50x certificate badge with Harvard and edX logos, featuring the text CS50x Introduction to Computer Science on a white background, conveying a sense of achievement and academic excellence" /></div>
+                                    <div class="cert-img-wrapper"><img src="cs50.png" alt="CS50x certificate - Harvard CS50's Introduction to Computer Science" /></div>
                                     <h3>CS50x: CS50’s Introduction to Computer Science</h3>
                                 </a>
                         </div>
                         <div class="certification-item">
                                 <a href="https://courses.edx.org/certificates/72cb5a8d069d4d419609446897264941?_gl=1*18cpq4d*_gcl_au*ODIzMjMwODM5LjE3NTYxNDA4NzE.*_ga*MTA5NjE1MTEyMS4xNzU2MTQwODM2*_ga_D3KS4KMDT0*czE3NTYzMTU4NTQkbzMkZzEkdDE3NTYzMTYwNzckajQkbDAkaDA" target="_blank">
-                                    <div class="cert-img-wrapper"><img src="html.png" alt="HTML5 and CSS Fundamentals certificate badge featuring the HTML5 and CSS3 logos side by side on a clean white background. The text HTML5 and CSS Fundamentals appears prominently. The image conveys a sense of achievement and professionalism." /></div>
+                                    <div class="cert-img-wrapper"><img src="html.png" alt="HTML5 and CSS Fundamentals certificate - edX certified in HTML5 and CSS3" /></div>
                                     <h3>HTML5 and CSS Fundamentals</h3>
                                 </a>
                         </div>
@@ -403,7 +416,11 @@
             <a href="https://github.com/saklain-s" target="_blank"><i class='bx bxl-github'></i></a>
             <a href="https://leetcode.com/u/Saklain_4/" target="_blank"><img src="https://leetcode.com/favicon.ico" alt="LeetCode" style="width: 2.5rem; height: 2.5rem; border-radius: 50%; vertical-align: middle;"></a>
             <a href="https://www.instagram.com/_.saklain/" target="_blank"><i class='bx bxl-instagram'></i></a>
-            
+        </div>
+        
+        <div class="view-counter">
+            <i class='bx bxs-show'></i>
+            <span id="viewCount">0</span> Views
         </div>
         
         <p class="copyright">
@@ -413,8 +430,6 @@
 
     <!-- Script -->
     <script src="script.js"></script>
-   
-
 
 </body>
 </html>
